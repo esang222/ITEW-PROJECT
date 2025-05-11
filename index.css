@@ -805,4 +805,50 @@ color: white;
   .charac-container h1 {
     font-size: 5vw;
   }
+
+  
+}
+
+@media (max-width: 425px) {
+.btn.icon i{
+    font-size: 20px;
+  }
+
+  .btn.icon{
+    display: flex;
+  }
+
+  .search-bar{
+    width: 12rem !important;
+  }
+
+  .btn.shop{
+    padding: 2vw;
+    font-size: 3.5vw;
+  }
+
+  .container.bg-lightblue{
+    padding: 6vw !important;
+  }
+
+  .bg-lightblue p{
+    font-size: 3vw;
+    padding: 1vw;
+  }
+
+  .bg-lightblue h2{
+    font-size: 6vw;
+  }
+
+  .world h3, .collections h3{
+    font-size: 6vw;
+  }
+
+  .collection-btn{
+    font-size: 4vw;
+  }
+
+  .footer h6{
+    font-size: 5vw;
+  }
 }
