@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sanrio Plushies</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <nav class="navbar top px-4 py-3">
+    <div class="mx-auto">
+      <a href="Landing.html">
+        <img src="img/sanrio-logo.png" alt="Sanrio Logo" height="70" />
+      </a>
+    </div>
+    <form class="d-flex ms-auto">
+      <input class="search-bar form-control me-2 rounded-3 " type="search" placeholder="Search" aria-label="Search"
+        style="width: 300px" />
+        <div class="btn icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="UserProfile.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </form>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg" style="background-color: #ffd9e6">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav d-flex flex-lg-row flex-column gap-5">
+          <li class="nav-item">
+            <a class="nav-link " href="Landing.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="AboutUs.html">ABOUT</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              CHARACTERS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="HelloKitty.html">Hello Kitty</a></li>
+              <li><a class="dropdown-item" href="MyMelody.html">My Melody</a></li>
+              <li><a class="dropdown-item" href="Cinnamoroll.html">Cinnamoroll</a></li>
+              <li><a class="dropdown-item" href="Kuromi.html">Kuromi</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Shop.html">SHOP</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              COLLECTIONS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Plush&Toys.html">Plush & Toys</a></li>
+              <li><a class="dropdown-item" href="Apparel.html">Apparel</a></li>
+              <li><a class="dropdown-item" href="Bags.html">Bags</a></li>
+              <li><a class="dropdown-item" href="Stationery.html">Stationery</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="FAQS.html">FAQs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <div class="container py-5">
+      <div class="profile-header text-center">
+        <img src="img/profile.jpg" alt="Profile" class="profile-picture mb-3" />
+        <h4 class="fw-bold">Hello Kitty</h4>
+        <p class="text-muted">kitty@email.com</p>
+      </div>
+
+      <div class="cont">
+        <div class="tab-content">
+          <ul
+            class="nav nav-pills my-4 justify-content-center"
+            id="profileTabs"
+          >
+            <li class="nav-item">
+              <button
+                class="userbtn nav-link active"
+                data-bs-toggle="pill"
+                data-bs-target="#orders"
+              >
+                Orders
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="userbtn nav-link"
+                data-bs-toggle="pill"
+                data-bs-target="#wishlist"
+              >
+                Wishlist
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="userbtn nav-link"
+                data-bs-toggle="pill"
+                data-bs-target="#settings"
+              >
+                Settings
+              </button>
+            </li>
+          </ul>
+
+          <!-- Orders Tab -->
+          <div class="tab-pane fade show active" id="orders">
+            <h5 class="text">Recent Orders</h5>
+            <br />
+            <div class="holder border rounded p-1 shadow-sm">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between">
+                  <span>Order #00123 - Cinnamoroll Plush</span>
+                  <span class="text-success">Delivered</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <span>Order #00124 - Hello Kitty Bag</span>
+                  <span class="text-warning">Processing</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Wishlist Tab -->
+          <div class="tab-pane fade" id="wishlist">
+            <h5>Wishlist</h5>
+            <br />
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="wishcard card h-100 text-center shadow-sm">
+                  <img
+                    src="img/plushie1.png"
+                    class="card-img-top"
+                    alt="Plush 1"
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title">Cinnamoroll Plush</h6>
+                    <p class="text-muted">P 850</p>
+                    <button class="bluebtn btn btn-sm btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="wishcard card h-100 text-center shadow-sm">
+                  <img
+                    src="img/plushie4.png"
+                    class="card-img-top"
+                    alt="Plush 1"
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      My Melody 9" Plush (Sanrio Academy Series)
+                    </h6>
+                    <p class="text-muted">P 1000</p>
+                    <button class="bluebtn btn btn-sm btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="wishcard card h-100 text-center shadow-sm">
+                  <img src="img/s1.png" class="card-img-top" alt="Plush 1" />
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      Cinnamoroll Large Paper Clip (Sanrio Forever Series)
+                    </h6>
+                    <p class="text-muted">P 850</p>
+                    <button class="bluebtn btn btn-sm btn-primary">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Settings Tab -->
+          <div class="tab-pane fade" id="settings">
+            <h5>Account Settings</h5>
+            <br />
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" value="Hello Kitty" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  value="143 St. Francis"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  value="kitty@email.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" value="********" />
+              </div>
+              <div class="text-end">
+                <button type="submit" class="savebtn btn btn-success">
+                  Save Changes
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

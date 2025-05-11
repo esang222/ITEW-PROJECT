@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product View</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  
+   <nav class="navbar top px-4 py-3">
+    <div class="mx-auto">
+        <a href="Landing.html">
+            <img src="img/sanrio-logo.png" alt="Sanrio Logo" height="70" />
+        </a>
+    </div>
+    <form class="d-flex ms-auto">
+        <input class="search-bar form-control me-2 rounded-3" type="search" placeholder="Search" aria-label="Search"
+            style="width: 300px" />
+            <div class="btn icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="UserProfile.html"><i class="fa-solid fa-user"></i></a>
+            </div>
+    </form>
+</nav>
+
+<nav class="navbar navbar-expand-lg" style="background-color: #ffd9e6">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav d-flex flex-lg-row flex-column gap-5">
+                <li class="nav-item"><a class="nav-link" href="Landing.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="AboutUs.html">ABOUT</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">CHARACTERS</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="HelloKitty.html">Hello Kitty</a></li>
+                        <li><a class="dropdown-item" href="MyMelody.html">My Melody</a></li>
+                        <li><a class="dropdown-item" href="Cinnamoroll.html">Cinnamoroll</a></li>
+                        <li><a class="dropdown-item" href="Kuromi.html">Kuromi</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="Shop.html">SHOP</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown">COLLECTIONS</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Plush&Toys.html">Plush & Toys</a></li>
+                        <li><a class="dropdown-item" href="Apparel.html">Apparel</a></li>
+                        <li><a class="dropdown-item" href="Bags.html">Bags</a></li>
+                        <li><a class="dropdown-item" href="Stationery.html">Stationery</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="Contact.html">CONTACT</a></li>
+                <li class="nav-item"><a class="nav-link" href="FAQS.html">FAQs</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Product View Section -->
+  <div class="container py-5">
+    <div class="row g-5">
+      <div class="col-md-6 text-center">
+        <img src="img/plushie1.png" class="img-fluid" alt="Cinnamoroll Plush" style="border: 5px solid #49a6d4; border-radius: 10px;" />
+
+      </div>
+      <div class="col-md-6">
+        <h2>Cinnamoroll 16" Plush (Sprinkles Series)</h2>
+        <p class="text-muted">Price: <strong>P 850</strong></p>
+        <p class="mb-4">What kind of sleeper are you? Grab your nightgown and trusty nightcap and let’s dive into that honk shoo lifestyle. After all who doesn’t need a little more sleep?
+<br><br>
+          Cuddly and dressed for the sleepiest occasion, your favorite Sanrio Characters cozy up in their bedtime’s best. A little larger than our normal plush size, these 10” friends make for the cutest sleepover!
+          
+          </p>
+        
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <span>Quantity:</span>
+          <button class="btn btn-outline-secondary btn-sm">−</button>
+          <span>1</span>
+          <button class="btn btn-outline-secondary btn-sm">+</button>
+        </div>
+
+        <button class="btn bluebtn w-100 mb-2">ADD TO CART</button>
+        <button class="btn bluecard w-100"><i class="fa-regular fa-heart me-2"></i>Add to Wishlist</button>
+      </div>
+    </div>
+
+
+   <!-- Recommendation Section -->
+<div class="mt-5">
+  <h4>You may also like</h4>
+  <div class="row mt-4 g-4">
+    <!-- Recommended Product 1 -->
+    <div class="col-12 col-md-4">
+      <div class="card reco h-100 shadow-sm text-center d-flex flex-column">
+        <div class="d-flex align-items-center justify-content-center" style="height: 220px;">
+          <img src="img/plushie2.png" class="img-fluid p-3" style="max-height: 180px;" alt="Kuromi Plush">
+        </div>
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h6 class="card-title">Kuromi 9" Plush (Ribbon Party Series)</h6>
+            <p class="text-muted">P 1,200</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recommended Product 2 -->
+    <div class="col-12 col-md-4">
+      <div class="card reco h-100 shadow-sm text-center d-flex flex-column">
+        <div class="d-flex align-items-center justify-content-center" style="height: 220px;">
+          <img src="img/plushie6.png" class="img-fluid p-3" style="max-height: 180px;" alt="Cogimyun Plush">
+        </div>
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h6 class="card-title">Cogimyun 9" Plush (Angel Dance Club Series)</h6>
+            <p class="text-muted">P 800</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recommended Product 3 -->
+    <div class="col-12 col-md-4">
+      <a href="Plushie5.html" class="text-decoration-none text-dark">
+      <div class="card reco h-100 shadow-sm text-center d-flex flex-column">
+        <div class="d-flex align-items-center justify-content-center" style="height: 220px;">
+          <img src="img/plushie5.png" class="img-fluid p-3" style="max-height: 180px;" alt="Hello Kitty Plush">
+        </div>
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h6 class="card-title">Hello Kitty 9" Plush (Ribbon Party Series)</h6>
+            <p class="text-muted">P 1,300</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+</div>
+
+</body>
+</html>
